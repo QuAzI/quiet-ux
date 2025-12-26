@@ -1,0 +1,599 @@
+[
+  {
+    "settings": {
+      "disableAll": false,
+      "exposeIframes": false,
+      "exposeStyleName": false,
+      "keepAlive": 0,
+      "keepAliveIdle": false,
+      "newStyleAsUsercss": true,
+      "openEditInWindow": true,
+      "openEditInWindow.popup": false,
+      "patchCsp": false,
+      "show-badge": true,
+      "styleViaASS": false,
+      "styleViaXhr": false,
+      "urlInstaller": true,
+      "windowPosition": {
+        "left": 2872,
+        "top": 0,
+        "width": 976,
+        "height": 1050
+      },
+      "compactWidth": 850,
+      "config.autosave": true,
+      "schemeSwitcher.enabled": "system",
+      "schemeSwitcher.nightStart": "18:00",
+      "schemeSwitcher.nightEnd": "06:00",
+      "popup.enabledFirst": true,
+      "popup.stylesFirst": true,
+      "popup.autoResort": false,
+      "popup.borders": false,
+      "popup.findSort": "w",
+      "manage.onlyEnabled": false,
+      "manage.onlyLocal": false,
+      "manage.onlyUsercss": false,
+      "manage.onlyEnabled.invert": false,
+      "manage.onlyLocal.invert": false,
+      "manage.onlyUsercss.invert": false,
+      "manage.actions.expanded": false,
+      "manage.backup.expanded": true,
+      "manage.filters.expanded": true,
+      "manage.links.expanded": true,
+      "manage.minColumnWidth": 750,
+      "manage.newUI": true,
+      "manage.newUI.favicons": true,
+      "manage.newUI.faviconsGray": false,
+      "manage.newUI.targets": 3,
+      "manage.newUI.sort": "title,asc",
+      "manage.searchMode": "meta",
+      "editor.options": {},
+      "editor.toc.expanded": true,
+      "editor.options.expanded": true,
+      "editor.options.style.expanded": true,
+      "editor.lint.expanded": true,
+      "editor.publish.expanded": true,
+      "editor.lineWrapping": true,
+      "editor.smartIndent": true,
+      "editor.indentWithTabs": false,
+      "editor.tabSize": 2,
+      "editor.keyMap": "sublime",
+      "editor.theme": "default",
+      "editor.beautify": {
+        "selector_separator_newline": true,
+        "newline_before_open_brace": false,
+        "newline_after_open_brace": true,
+        "newline_between_properties": true,
+        "newline_before_close_brace": true,
+        "newline_between_rules": false,
+        "preserve_newlines": true,
+        "end_with_newline": false,
+        "indent_conditional": true,
+        "indent_mozdoc": true,
+        "space_around_combinator": true,
+        "space_around_cmp": false
+      },
+      "editor.beautify.hotkey": "",
+      "editor.lintDelay": 300,
+      "editor.linter": "csslint",
+      "editor.lintReportDelay": 500,
+      "editor.matchHighlight": "token",
+      "editor.autoCloseBrackets": true,
+      "editor.autocompleteOnTyping": false,
+      "editor.contextDelete": false,
+      "editor.selectByTokens": true,
+      "editor.arrowKeysTraverse": true,
+      "editor.appliesToLineWidget": true,
+      "editor.autosaveDraft": 10,
+      "editor.livePreview": true,
+      "editor.livePreview.delay": 0.2,
+      "editor.targetsFirst": true,
+      "editor.colorpicker": true,
+      "editor.colorpicker.hexUppercase": false,
+      "editor.colorpicker.hotkey": "",
+      "editor.colorpicker.color": "",
+      "editor.colorpicker.maxHeight": 300,
+      "hotkey._execute_browser_action": "",
+      "hotkey.openManage": "",
+      "hotkey.styleDisableAll": "",
+      "sync.enabled": "none",
+      "iconset": -1,
+      "badgeDisabled": "#8B0000",
+      "badgeNormal": "#006666",
+      "headerWidth.edit": 280,
+      "headerWidth.install": 280,
+      "headerWidth.manage": 280,
+      "popup.search.globals": false,
+      "popupWidth": 246,
+      "popupWidthMax": 280,
+      "updateInterval": 24,
+      "updateOnlyEnabled": false
+    },
+    "order": {
+      "main": [],
+      "prio": []
+    }
+  },
+  {
+    "enabled": true,
+    "installDate": 1748022306992,
+    "sections": [
+      {
+        "code": "/* ==UserStyle==\n@name           opennet.ru\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */",
+        "start": 0
+      },
+      {
+        "code": "body {\n        background: #fdfdfd !important;\n        color: #222 !important;\n        font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif !important;\n        line-height: 1.6;\n        max-width: 800px;\n        margin: auto;\n        padding: 20px;\n    }\n\n/*     a {\n        color: #0366d6 !important;\n        text-decoration: none !important;\n    } */\n\n    a:hover {\n        text-decoration: underline !important;\n    }\n\n/*     table, .footer, .navbar, .menu, .header, .side, .banner, center > font, br {\n        display: none !important;\n    } */\n\n/*     table[width=\"100%\"], center > table, form, hr {\n        display: none !important;\n    } */\n\n    td, font, div, p {\n        font-size: 16px !important;\n    }\n\n    #as2 {\n      width: 95%;\n    }\n  \n    /* Основная новостная часть */\n/*     .body {\n        padding: 0;\n        margin: 0;\n        background: none !important;\n    } */\n\n    /* Убираем отступы и делаем новостную ленту компактной */\n    td[width=\"100%\"] {\n        padding: 0 !important;\n        margin: 0 !important;\n    }\n\n    /* Убираем лишнее */\n    iframe, script, [style*=\"banner\"], [href*=\"ad\"] {\n        display: none !important;\n    }\n    \n    table.thdr {\n        margin-left: 100px;\n        background: none !important;\n        border-top: 0px;\n    }\n    \n    table.thdr2, table.tlist, table.fadv, td.chdr, td.chdr2, table.tbrd, td.tdelim {\n        background: none !important;\n        border-top: 0px;\n    }\n    \n    table.ttxt2 {\n        background: none !important;\n        border: 0px;\n    }\n    \n    table.ttxt {\n        background: none !important;\n        border: 0px;\n    }\n    \n    table > tbody > tr > td,\n    aside > div {\n        background: none !important;\n    }\n    \n    div.t_lenta_wrapper, div.t_lenta {\n        background: none !important;\n    }\n    td.chdr, td.ctxt {\n        background: white !important;\n    }",
+        "start": 218,
+        "domains": [
+          "opennet.ru"
+        ]
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           opennet.ru\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"opennet.ru\") {\n    body {\n        background: #fdfdfd !important;\n        color: #222 !important;\n        font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif !important;\n        line-height: 1.6;\n        max-width: 800px;\n        margin: auto;\n        padding: 20px;\n    }\n\n/*     a {\n        color: #0366d6 !important;\n        text-decoration: none !important;\n    } */\n\n    a:hover {\n        text-decoration: underline !important;\n    }\n\n/*     table, .footer, .navbar, .menu, .header, .side, .banner, center > font, br {\n        display: none !important;\n    } */\n\n/*     table[width=\"100%\"], center > table, form, hr {\n        display: none !important;\n    } */\n\n    td, font, div, p {\n        font-size: 16px !important;\n    }\n\n    #as2 {\n      width: 95%;\n    }\n  \n    /* Основная новостная часть */\n/*     .body {\n        padding: 0;\n        margin: 0;\n        background: none !important;\n    } */\n\n    /* Убираем отступы и делаем новостную ленту компактной */\n    td[width=\"100%\"] {\n        padding: 0 !important;\n        margin: 0 !important;\n    }\n\n    /* Убираем лишнее */\n    iframe, script, [style*=\"banner\"], [href*=\"ad\"] {\n        display: none !important;\n    }\n    \n    table.thdr {\n        margin-left: 100px;\n        background: none !important;\n        border-top: 0px;\n    }\n    \n    table.thdr2, table.tlist, table.fadv, td.chdr, td.chdr2, table.tbrd, td.tdelim {\n        background: none !important;\n        border-top: 0px;\n    }\n    \n    table.ttxt2 {\n        background: none !important;\n        border: 0px;\n    }\n    \n    table.ttxt {\n        background: none !important;\n        border: 0px;\n    }\n    \n    table > tbody > tr > td,\n    aside > div {\n        background: none !important;\n    }\n    \n    div.t_lenta_wrapper, div.t_lenta {\n        background: none !important;\n    }\n    td.chdr, td.ctxt {\n        background: white !important;\n    }\n}",
+    "usercssData": {
+      "name": "opennet.ru",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "opennet.ru",
+    "updateDate": 1766752228859,
+    "_id": "8037665a-b36f-4115-8ef6-63933fa466d9",
+    "_rev": 1766752228859,
+    "id": 1
+  },
+  {
+    "enabled": true,
+    "installDate": 1748423663823,
+    "sections": [
+      {
+        "code": "/* ==UserStyle==\n@name           metanit.com\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */",
+        "start": 0
+      },
+      {
+        "code": "/* Кнопки соц.сетей */\n  .socBlock {\n    display: none;\n  }\n  \n  /* Весь правый блок */\n  .item.right {\n    display: none;\n  }\n  \n  /* Общие рекламные блоки */\n  #banner,\n  .adsbygoogle,\n  .footer-adaptive,\n  .ad,\n  .top-ad,\n  .adsbyyandex,\n  #yandex_rtb_R-A,\n  iframe[src*=\"doubleclick\"],\n  div[id^=\"yandex_rtb_\"],\n  ins[class^=\"adsby\"],\n  .advert,\n  .adunit,\n  [id*=\"ad-container\"],\n  [class*=\"ad-container\"],\n  [class*=\"banner\"],\n  [id*=\"banner\"],\n  [class*=\"ezoic\"] {\n      display: none !important;\n  }\n\n  /* Убираем отступы от рекламы */\n  .mainContent, .contentRight {\n      margin-right: 0 !important;\n  }\n\n  /* Выпадающий блок снизу */\n  .csr-uniq1 {\n    display: none;\n  }\n  \n    \n      /* Растягиваем основной контент на всю ширину */\n    #content_left, .leftColumn, .mainLeft {\n        width: 100% !important;\n    }\n\n    /* Центрирование основного контента */\n    .item.center.menC {\n        max-width: 900px;\n        margin: auto;\n        margin-left: 130px;\n    }\n    @media (max-width: 900px) {\n      .item.center.menC {\n        margin-left: auto;\n      }\n    }",
+        "start": 220,
+        "domains": [
+          "metanit.com"
+        ]
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           metanit.com\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"metanit.com\") {\n  /* Кнопки соц.сетей */\n  .socBlock {\n    display: none;\n  }\n  \n  /* Весь правый блок */\n  .item.right {\n    display: none;\n  }\n  \n  /* Общие рекламные блоки */\n  #banner,\n  .adsbygoogle,\n  .footer-adaptive,\n  .ad,\n  .top-ad,\n  .adsbyyandex,\n  #yandex_rtb_R-A,\n  iframe[src*=\"doubleclick\"],\n  div[id^=\"yandex_rtb_\"],\n  ins[class^=\"adsby\"],\n  .advert,\n  .adunit,\n  [id*=\"ad-container\"],\n  [class*=\"ad-container\"],\n  [class*=\"banner\"],\n  [id*=\"banner\"],\n  [class*=\"ezoic\"] {\n      display: none !important;\n  }\n\n  /* Убираем отступы от рекламы */\n  .mainContent, .contentRight {\n      margin-right: 0 !important;\n  }\n\n  /* Выпадающий блок снизу */\n  .csr-uniq1 {\n    display: none;\n  }\n  \n    \n      /* Растягиваем основной контент на всю ширину */\n    #content_left, .leftColumn, .mainLeft {\n        width: 100% !important;\n    }\n\n    /* Центрирование основного контента */\n    .item.center.menC {\n        max-width: 900px;\n        margin: auto;\n        margin-left: 130px;\n    }\n    @media (max-width: 900px) {\n      .item.center.menC {\n        margin-left: auto;\n      }\n    }\n}",
+    "usercssData": {
+      "name": "metanit.com",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "metanit.com",
+    "updateDate": 1766752114952,
+    "_id": "9e833aab-b2c1-4cb3-b670-535d84b29689",
+    "_rev": 1766752114953,
+    "id": 2
+  },
+  {
+    "enabled": true,
+    "installDate": 1748801514580,
+    "sections": [
+      {
+        "code": "/* ==UserStyle==\n@name           habr.com\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */",
+        "start": 0
+      },
+      {
+        "code": "* {\n    scrollbar-width: thin;\n  }\n  \n  .article-formatted-body {\n    color: #101010\n  }\n  \n  .tm-page-width {\n    margin-right: 0px;\n\n    @media (min-width: 1024px) {\n      /* max-width: 1600px; */\n      max-width: 80vw;\n    }    \n  }\n  \n  .tm-page__header,\n  .tm-article-feed-blocks {\n    opacity: 0.3;\n    filter: grayscale(100%);\n  }\n  \n  .tm-header__container,\n  .tm-comment__header {\n    filter: grayscale(100%);\n  }\n  \n  .tm-main-menu__item_has-new::after {\n    filter: grayscale(100%);\n  }\n  \n  .tm-entity-image {\n    opacity: 0.4;\n    filter: grayscale(100%);\n  }\n  \n  .tm-page__sidebar {\n    opacity: 0.4;\n    filter: grayscale(100%);\n    \n    &:has(.code-explainer-modal) {\n      width: unset;\n    }\n  }\n  \n  .tm-article-sticky-panel {\n    opacity: 0.4;\n    filter: grayscale(100%);\n    height: 40px;\n  }\n  \n  .code-explainer {\n    justify-content: flex-end;\n    \n    .code-explainer__button {\n      opacity: 0.3;\n      filter: grayscale(100%);\n      transform: scale(0.7);\n      width: fit-content;\n    }\n  }",
+        "start": 214,
+        "domains": [
+          "habr.com"
+        ]
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           habr.com\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"habr.com\") {\n  * {\n    scrollbar-width: thin;\n  }\n  \n  .article-formatted-body {\n    color: #101010\n  }\n  \n  .tm-page-width {\n    margin-right: 0px;\n\n    @media (min-width: 1024px) {\n      /* max-width: 1600px; */\n      max-width: 80vw;\n    }    \n  }\n  \n  .tm-page__header,\n  .tm-article-feed-blocks {\n    opacity: 0.3;\n    filter: grayscale(100%);\n  }\n  \n  .tm-header__container,\n  .tm-comment__header {\n    filter: grayscale(100%);\n  }\n  \n  .tm-main-menu__item_has-new::after {\n    filter: grayscale(100%);\n  }\n  \n  .tm-entity-image {\n    opacity: 0.4;\n    filter: grayscale(100%);\n  }\n  \n  .tm-page__sidebar {\n    opacity: 0.4;\n    filter: grayscale(100%);\n    \n    &:has(.code-explainer-modal) {\n      width: unset;\n    }\n  }\n  \n  .tm-article-sticky-panel {\n    opacity: 0.4;\n    filter: grayscale(100%);\n    height: 40px;\n  }\n  \n  .code-explainer {\n    justify-content: flex-end;\n    \n    .code-explainer__button {\n      opacity: 0.3;\n      filter: grayscale(100%);\n      transform: scale(0.7);\n      width: fit-content;\n    }\n  }\n}",
+    "usercssData": {
+      "name": "habr.com",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "habr.com",
+    "updateDate": 1766752313252,
+    "_id": "8c3deef7-f9af-4890-bb9a-835ece17c89a",
+    "_rev": 1766752313252,
+    "id": 3
+  },
+  {
+    "enabled": true,
+    "installDate": 1748805103627,
+    "sections": [
+      {
+        "code": "/* ==UserStyle==\n@name           Readeck\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */",
+        "start": 0
+      },
+      {
+        "code": "* {\n    scrollbar-width: thin;\n  }\n  \n  .bookmark-content {\n    color: #101010\n  }\n  \n  .layout-topnav {\n    opacity: 0.4;\n    filter: grayscale(100%);\n    \n    &:hover {\n      opacity: unset;\n      filter: unset;\n    }\n  }\n  \n  .bookmark-topbar {\n    filter: grayscale(100%);\n  }\n  \n  .bookmark-sidebar {\n    opacity: 0.7;\n    filter: grayscale(100%);\n    \n    &:hover {\n      opacity: unset;\n      filter: unset;\n    }\n  }\n  \n  @media only screen and (max-width: 900px) {\n  body.js .sidemenu--hidden {\n    visibility: hidden;\n    --tw-translate-x: -105%;\n  }\n\n  body.js .sidemenu {\n    bottom: 0;\n    left: 0;\n    position: fixed;\n    top: 0;\n    transition-delay: .1s;\n    transition-duration: .15s;\n    transition-property: transform;\n    transition-timing-function: cubic-bezier(.4,0,.2,1);\n    visibility: visible;\n    z-index: 50;\n    --tw-translate-x: 0px;\n  }\n  \n  .layout {\n    display: flex;\n    flex-direction: column;\n  }\n}",
+        "start": 251,
+        "urlPrefixes": [
+          "https://read.quazi.keenetic.pro/bookmarks/"
+        ]
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           Readeck\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document url-prefix(\"https://read.quazi.keenetic.pro/bookmarks/\") {\n  * {\n    scrollbar-width: thin;\n  }\n  \n  .bookmark-content {\n    color: #101010\n  }\n  \n  .layout-topnav {\n    opacity: 0.4;\n    filter: grayscale(100%);\n    \n    &:hover {\n      opacity: unset;\n      filter: unset;\n    }\n  }\n  \n  .bookmark-topbar {\n    filter: grayscale(100%);\n  }\n  \n  .bookmark-sidebar {\n    opacity: 0.7;\n    filter: grayscale(100%);\n    \n    &:hover {\n      opacity: unset;\n      filter: unset;\n    }\n  }\n  \n  @media only screen and (max-width: 900px) {\n  body.js .sidemenu--hidden {\n    visibility: hidden;\n    --tw-translate-x: -105%;\n  }\n\n  body.js .sidemenu {\n    bottom: 0;\n    left: 0;\n    position: fixed;\n    top: 0;\n    transition-delay: .1s;\n    transition-duration: .15s;\n    transition-property: transform;\n    transition-timing-function: cubic-bezier(.4,0,.2,1);\n    visibility: visible;\n    z-index: 50;\n    --tw-translate-x: 0px;\n  }\n  \n  .layout {\n    display: flex;\n    flex-direction: column;\n  }\n}\n}",
+    "usercssData": {
+      "name": "Readeck",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "Readeck",
+    "updateDate": 1766752262401,
+    "_id": "1f45413c-791d-4ac2-9c9b-b6791275a1d7",
+    "_rev": 1766752262401,
+    "id": 4
+  },
+  {
+    "enabled": true,
+    "installDate": 1750617305836,
+    "sections": [
+      {
+        "code": "/* ==UserStyle==\n@name           vc.ru\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */",
+        "start": 0
+      },
+      {
+        "code": "#app {\n    -moz-filter: grayscale(100%);\n    -webkit-filter: grayscale(100%);\n    filter: grayscale(100%);\n  }\n  \n  .view {\n    width: 920px;\n  }\n  \n  .sidebar {\n    opacity: 0.3;\n    scrollbar-width: thin;\n    \n    &:hover {\n      opacity: unset;\n      }\n  }\n \n  .header__main-distribution {\n    display: none;\n  }\n  \n  .supbar.supbar--top {\n    display: none;\n  }\n  \n  .rotator.entry-rotator {\n    display: none;\n  }\n  \n  .aside.aside--right {\n    display: none;\n  }\n  \n  .content__floating {\n    display: none;\n  }",
+        "start": 208,
+        "domains": [
+          "vc.ru"
+        ]
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           vc.ru\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"vc.ru\") {\n  #app {\n    -moz-filter: grayscale(100%);\n    -webkit-filter: grayscale(100%);\n    filter: grayscale(100%);\n  }\n  \n  .view {\n    width: 920px;\n  }\n  \n  .sidebar {\n    opacity: 0.3;\n    scrollbar-width: thin;\n    \n    &:hover {\n      opacity: unset;\n      }\n  }\n \n  .header__main-distribution {\n    display: none;\n  }\n  \n  .supbar.supbar--top {\n    display: none;\n  }\n  \n  .rotator.entry-rotator {\n    display: none;\n  }\n  \n  .aside.aside--right {\n    display: none;\n  }\n  \n  .content__floating {\n    display: none;\n  }\n}",
+    "usercssData": {
+      "name": "vc.ru",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "vc.ru",
+    "updateDate": 1766752286300,
+    "_id": "e11298b1-9eb3-4be0-97cf-d7dc61ed7c5d",
+    "_rev": 1766752286300,
+    "id": 5
+  },
+  {
+    "enabled": true,
+    "installDate": 1750618307021,
+    "sections": [
+      {
+        "code": "/* ==UserStyle==\n@name           skillbox.ru\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */",
+        "start": 0
+      },
+      {
+        "code": "/*\n  body * {\n    -moz-filter: grayscale(100%);\n    -webkit-filter: grayscale(100%);\n    filter: grayscale(100%);\n  }\n  */\n  \n  .header-banner.topBanner {\n    display: none !important;\n  }\n  \n  .under_header_banner {\n    display: none;\n  }\n  \n  .subscribe-popup {\n    display: none !important;\n  }\n  \n  .js-article-banner {\n    display: none;\n  }\n  \n  fstrk-widget {\n    display: none;\n  }\n  \n  .container {\n    width: 960px;\n  }\n  \n  .col-poster {\n    max-width: 100%;\n    flex: 0 0 100%;\n  \n    .article-poster {\n      margin-left: auto;\n      margin-right: auto;\n    }\n    \n    noindex {\n      margin-left: auto;\n      margin-right: auto;\n      \n      p {\n        text-align: center\n      }\n    }\n  }\n  \n  .col-author:has(.article-author) {\n    display: none;\n  }",
+        "start": 220,
+        "domains": [
+          "skillbox.ru"
+        ]
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           skillbox.ru\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"skillbox.ru\") {\n    /*\n  body * {\n    -moz-filter: grayscale(100%);\n    -webkit-filter: grayscale(100%);\n    filter: grayscale(100%);\n  }\n  */\n  \n  .header-banner.topBanner {\n    display: none !important;\n  }\n  \n  .under_header_banner {\n    display: none;\n  }\n  \n  .subscribe-popup {\n    display: none !important;\n  }\n  \n  .js-article-banner {\n    display: none;\n  }\n  \n  fstrk-widget {\n    display: none;\n  }\n  \n  .container {\n    width: 960px;\n  }\n  \n  .col-poster {\n    max-width: 100%;\n    flex: 0 0 100%;\n  \n    .article-poster {\n      margin-left: auto;\n      margin-right: auto;\n    }\n    \n    noindex {\n      margin-left: auto;\n      margin-right: auto;\n      \n      p {\n        text-align: center\n      }\n    }\n  }\n  \n  .col-author:has(.article-author) {\n    display: none;\n  }\n}",
+    "usercssData": {
+      "name": "skillbox.ru",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "skillbox.ru",
+    "updateDate": 1766752217961,
+    "_id": "8a003224-82f2-4bd6-abbd-244102c0cddd",
+    "_rev": 1766752217961,
+    "id": 6
+  },
+  {
+    "enabled": true,
+    "installDate": 1751655699404,
+    "sections": [
+      {
+        "code": "/* ==UserStyle==\n@name           animevost.org\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */",
+        "start": 0
+      },
+      {
+        "code": "body {\n    filter: grayscale(100%);\n  }",
+        "start": 243,
+        "domains": [
+          "animevost.org",
+          "vost.pw"
+        ]
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           animevost.org\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"animevost.org\"), domain(\"vost.pw\") {\n  body {\n    filter: grayscale(100%);\n  }\n}",
+    "usercssData": {
+      "name": "animevost.org",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "animevost.org",
+    "updateDate": 1766690718608,
+    "_id": "7ad428b6-1bb3-4303-bfd3-2e88e34fcd92",
+    "_rev": 1766690718608,
+    "id": 7
+  },
+  {
+    "enabled": true,
+    "installDate": 1751655734662,
+    "sections": [
+      {
+        "code": "/* ==UserStyle==\n@name           anistar.org\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */",
+        "start": 0
+      },
+      {
+        "code": "body {\n    filter: grayscale(100%);\n  }\n  \n  .video_as {\n    filter: grayscale(1%);\n  }",
+        "start": 240,
+        "domains": [
+          "anistar.org",
+          "astar.bz"
+        ]
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           anistar.org\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"anistar.org\"), domain(\"astar.bz\") {\n  body {\n    filter: grayscale(100%);\n  }\n  \n  .video_as {\n    filter: grayscale(1%);\n  }\n}",
+    "usercssData": {
+      "name": "anistar.org",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "anistar.org",
+    "updateDate": 1766690760878,
+    "_id": "6b69dbc5-f94a-4e2f-b98a-1c8d32312944",
+    "_rev": 1766690760878,
+    "id": 8
+  },
+  {
+    "enabled": true,
+    "installDate": 1751829319726,
+    "sections": [
+      {
+        "code": "/* ==UserStyle==\n@name           senkuro.com\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */",
+        "start": 0
+      },
+      {
+        "code": "body {\n    filter: grayscale(100%);\n  }",
+        "start": 220,
+        "domains": [
+          "senkuro.com"
+        ]
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           senkuro.com\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"senkuro.com\") {\n  body {\n    filter: grayscale(100%);\n  }\n}",
+    "usercssData": {
+      "name": "senkuro.com",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "senkuro.com",
+    "updateDate": 1766752149084,
+    "_id": "b04ab861-a712-4eb7-a24b-5f7361fe8a48",
+    "_rev": 1766752149084,
+    "id": 10
+  },
+  {
+    "enabled": true,
+    "installDate": 1751829353513,
+    "sections": [
+      {
+        "code": "/* ==UserStyle==\n@name           joyreactor.cc\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */",
+        "start": 0
+      },
+      {
+        "code": "body {\n    filter: grayscale(100%);\n  }\n  \n  [id^=\"yandex_\"] {\n    display: none;\n  }",
+        "start": 224,
+        "domains": [
+          "joyreactor.cc"
+        ]
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           joyreactor.cc\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"joyreactor.cc\") {\n  body {\n    filter: grayscale(100%);\n  }\n  \n  [id^=\"yandex_\"] {\n    display: none;\n  }\n}",
+    "usercssData": {
+      "name": "joyreactor.cc",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "joyreactor.cc",
+    "updateDate": 1758781581457,
+    "_id": "770de345-eeaa-4941-9190-7f33643508b5",
+    "_rev": 1758781581457,
+    "id": 11
+  },
+  {
+    "enabled": true,
+    "installDate": 1751913483251,
+    "sections": [
+      {
+        "code": "/* ==UserStyle==\n@name           mail.google.com\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */",
+        "start": 0
+      },
+      {
+        "code": "body {\n    filter: grayscale(100%);\n  }",
+        "start": 228,
+        "domains": [
+          "mail.google.com"
+        ]
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           mail.google.com\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"mail.google.com\") {\n  body {\n    filter: grayscale(100%);\n  }\n}",
+    "usercssData": {
+      "name": "mail.google.com",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "mail.google.com",
+    "updateDate": 1766752332655,
+    "_id": "ea9ee380-6d95-4bb3-b777-b4940823d9d6",
+    "_rev": 1766752332655,
+    "id": 12
+  },
+  {
+    "enabled": true,
+    "installDate": 1751914966487,
+    "sections": [
+      {
+        "code": "/* ==UserStyle==\n@name           github.com\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */",
+        "start": 0
+      },
+      {
+        "code": "body {\n    filter: grayscale(100%);\n  }",
+        "start": 224,
+        "urls": [
+          "https://github.com/"
+        ]
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           github.com\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document url(\"https://github.com/\") {\n  body {\n    filter: grayscale(100%);\n  }\n}",
+    "usercssData": {
+      "name": "github.com",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "github.com",
+    "updateDate": 1751915453214,
+    "_id": "3d95352f-db08-40fc-9565-7be4ca9cfe80",
+    "_rev": 1751915453214,
+    "id": 13
+  },
+  {
+    "enabled": true,
+    "installDate": 1751916200668,
+    "sections": [
+      {
+        "code": "/* ==UserStyle==\n@name           youtube.com\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */",
+        "start": 0
+      },
+      {
+        "code": "body {\n/*     filter: grayscale(100%); */\n  }\n  \n  #logo,\n  #sections,\n  #avatar-btn,\n  #contents\n  {\n    filter: grayscale(100%);\n  }",
+        "start": 230,
+        "urls": [
+          "https://www.youtube.com/"
+        ]
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           youtube.com\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document url(\"https://www.youtube.com/\") {\n  body {\n/*     filter: grayscale(100%); */\n  }\n  \n  #logo,\n  #sections,\n  #avatar-btn,\n  #contents\n  {\n    filter: grayscale(100%);\n  }\n}",
+    "usercssData": {
+      "name": "youtube.com",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "youtube.com",
+    "updateDate": 1766752364136,
+    "_id": "a58e38e6-99ef-45dd-85a8-c7f94c831c30",
+    "_rev": 1766752364136,
+    "id": 14
+  },
+  {
+    "enabled": true,
+    "installDate": 1751916551446,
+    "sections": [
+      {
+        "code": "/* ==UserStyle==\n@name           youtube.com/watch\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */",
+        "start": 0
+      },
+      {
+        "code": "#logo,\n  #sections,\n  #avatar-btn,\n  #avatar,\n  #contents\n  {\n    filter: grayscale(100%);\n  }",
+        "start": 248,
+        "urlPrefixes": [
+          "https://www.youtube.com/watch"
+        ]
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           youtube.com/watch\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document url-prefix(\"https://www.youtube.com/watch\") {\n  #logo,\n  #sections,\n  #avatar-btn,\n  #avatar,\n  #contents\n  {\n    filter: grayscale(100%);\n  }\n}",
+    "usercssData": {
+      "name": "youtube.com/watch",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "youtube.com/watch",
+    "updateDate": 1766752373615,
+    "_id": "8795f1d6-6fa9-4eaf-8404-ec2f1a4164c8",
+    "_rev": 1766752373615,
+    "id": 15
+  },
+  {
+    "enabled": true,
+    "installDate": 1766750130152,
+    "sections": [
+      {
+        "code": "/* ==UserStyle==\n@name           reader.miniflux.app\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */",
+        "start": 0
+      },
+      {
+        "code": "header {\n    filter: grayscale(100%);\n  }\n  \n  nav {\n    opacity: 0.4;\n    filter: grayscale(100%);\n  }\n  \n  span.category {\n    opacity: 0.4;\n    filter: grayscale(100%);\n  }",
+        "start": 236,
+        "domains": [
+          "reader.miniflux.app"
+        ]
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           reader.miniflux.app\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"reader.miniflux.app\") {\n  header {\n    filter: grayscale(100%);\n  }\n  \n  nav {\n    opacity: 0.4;\n    filter: grayscale(100%);\n  }\n  \n  span.category {\n    opacity: 0.4;\n    filter: grayscale(100%);\n  }\n}",
+    "usercssData": {
+      "name": "reader.miniflux.app",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "reader.miniflux.app",
+    "updateDate": 1766752127706,
+    "_id": "75f2f005-8350-4713-8622-bd132b8f7895",
+    "_rev": 1766752127706,
+    "id": 16
+  }
+]
